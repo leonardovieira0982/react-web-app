@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import './assets/css/index.css';
-import Header from './pages/layout/header';
-
+import Navbar from "./components/navbar/navbar";
 class App extends React.Component {
 
   componentDidMount(){
@@ -10,9 +9,12 @@ class App extends React.Component {
   }
 
   render(){
-    return (    
-      <div id="page-body">
-          <Header></Header>      
+    return (  
+      <div>
+        <Fragment>
+          <Navbar />
+          
+        </Fragment>        
       </div>
     );
   }
