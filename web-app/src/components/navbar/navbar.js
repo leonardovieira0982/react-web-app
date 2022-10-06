@@ -3,6 +3,7 @@ import './navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Switchbox from "../switch/switchbox";
+import {Link} from 'react-router-dom';
 
 class Navbar extends React.Component {
 
@@ -11,15 +12,17 @@ class Navbar extends React.Component {
     }
 
     onCheckedStyle(){
+        let darkStyle = "navbar navbar-expand-lg navbar-dark bg-dark";
+        let ligthStyle = "navbar navbar-expand-lg navbar-light bg-light";
         var bodyStyle = document.body.className;
         
         if (bodyStyle === "light-mode"){
             document.body.className = "dark-mode";
-            document.getElementById("menu-navbar").className = "navbar-dark bg-dark";
+            document.getElementById("menu-navbar").className = darkStyle;
         }
         else {
             document.body.className = "light-mode";
-            document.getElementById("menu-navbar").className = "navbar-light bg-light";
+            document.getElementById("menu-navbar").className = ligthStyle;
         }   
     }
 
@@ -50,6 +53,7 @@ class Navbar extends React.Component {
                             <a className="nav-link" href="#">Contact</a>
                         </li>
                         <li className="nav-item active">
+                            <Link className="nav-link" to="/about">About</Link>
                             <a className="nav-link" href="#">About</a>
                         </li>
                     </ul>

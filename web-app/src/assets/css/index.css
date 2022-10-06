@@ -13,7 +13,6 @@ body {
     }
 }
 
-  
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -30,4 +29,3 @@ i {
 .light-mode {
     background-color: #FFFFFF;
 }
-
