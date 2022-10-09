@@ -3,7 +3,7 @@ import './navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Switchbox from "../switch/switchbox";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
 
@@ -47,7 +47,7 @@ class Navbar extends React.Component {
                     <nav id="menu-navbar" className="navbar navbar-expand-lg navbar-light bg-light">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home</a>
+                            <Link className="nav-link" to="/home">Home</Link>  
                         </li>
                         <li className="nav-item active">                            
                             <Link className="nav-link" to="/contact">Contact</Link>  

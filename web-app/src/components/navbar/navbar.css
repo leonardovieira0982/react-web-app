@@ -21,6 +21,13 @@
 i {    
     top: .25rem;
     padding-left: 10%;
-    position: relative;
-    
+    position: relative;    
+}
+
+@media (max-width: 780px) {
+    ul, li {
+        display: inline !important;
+        float: left;
+        padding-left: 4rem;
+    }   
 }
