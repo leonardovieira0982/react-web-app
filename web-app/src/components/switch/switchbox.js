@@ -22,9 +22,8 @@ class Switchbox extends React.Component {
 
     render() {
         return (
-            <div className="toggle-content"
-            onClick={() => this.props.onChekedChange()}>                  
-               <i id="switchkbox" 
+            <div className="toggle-content" onClick={() => this.props.onChekedChange()}>                  
+               <i id="switchkbox"
                     className="bi bi-toggle-off" 
                     onClick={this.onToggle} 
                     title="Change the background style">

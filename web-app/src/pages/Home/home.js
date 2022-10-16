@@ -1,15 +1,26 @@
 import React, { Component, Fragment } from "react";
+import './home.scss';
 import Input from '../../components/input/input';
-
+import Types from '../../components/input/inputEnumTypes';
 
 class Home extends Component {
     render(){       
         return(
             <Fragment>
-               <div>
-                <p>Open your account</p>
-                <p>Start here, in few minutes</p>
-                <Input id="txtName" validate={true} placeholder="name"></Input>                
+               <div className="main">
+                <h2>Open your account</h2>
+                <p>Personal Information</p>
+                    <div className="form-register">
+                        <div>
+                            <Input id="txtName" validate={true} type={Types.Text} placeholder="Name"></Input>
+                        </div>
+                        <div className="element-field">
+                            <Input id="txtEmail" validate={true} type={Types.Email} placeholder="Email"></Input>
+                        </div>
+                        <div className="element-field">
+                            <Input id="txtBirthday" validate={true} type={Types.Text} placeholder="Birthday"></Input>
+                        </div>
+                    </div>                             
                </div>
             </Fragment>
         );

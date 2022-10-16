@@ -1,0 +1,29 @@
+.main {
+    padding: 2rem 0 0 2rem;
+}
+
+.form-register {
+    display: inline-flex;
+}
+
+.element-field{
+    padding-left: 3rem;
+}
+
+p {
+    padding-top: 1rem;
+}
+
+@media (max-width: 780px) {
+    .main {
+        padding: 2rem 0 0 20%;
+    }
+
+    .form-register {
+        display: inline-block;
+    }
+
+    .element-field{
+        padding-left: 0rem;
+    }
+}
