@@ -1,0 +1,33 @@
+.dark-line {
+    background-color: #282c34;
+    height: 2rem;    
+}
+
+.nav-light-label {
+    color: #FFFFFF;
+    padding-top: .25rem;
+    padding-left: .5rem;
+}
+
+.nav-div-vw {
+    width: 50vw;
+    float: left; 
+}
+
+.nav-align-padding-left {
+    padding-left: 15%;
+}
+
+i {    
+    top: .25rem;
+    padding-left: 10%;
+    position: relative;    
+}
+
+@media (max-width: 780px) {
+    ul, li {
+        display: inline !important;
+        float: left;
+        padding-left: 4rem;
+    }   
+}
