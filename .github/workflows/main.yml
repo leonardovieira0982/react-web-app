@@ -1,5 +1,5 @@
-name: DeployApplication
-on: workflow_dispatch
+name: Super-Linter
+on: push
 
 jobs: 
  super-lint:
