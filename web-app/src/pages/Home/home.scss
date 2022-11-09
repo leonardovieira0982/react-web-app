@@ -1,9 +1,20 @@
 .main {
     padding: 2rem 0 0 2rem;
+    width: 100%;
 }
 
-.form-register {
-    display: inline-flex;
+.form-table {
+    display: table;    
+}
+
+.form-row {
+    display: table-row;
+}
+
+.form-column {
+    float: left;
+    display: table-column;
+    padding-right: 3rem;
 }
 
 .element-field{
@@ -14,9 +25,9 @@ p {
     padding-top: 1rem;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 811px) {
     .main {
-        padding: 2rem 0 0 20%;
+        padding: 2rem 0 0 10%;
     }
 
     .form-register {

@@ -1,6 +1,7 @@
 .dark-mode {
     --body-bg: #282c34;
     --font-color: #dee2e6;
+   
 }
 
 body {
@@ -12,32 +13,38 @@ body {
 
     background-color: var(--body-bg) !important;
     color: var(--font-color) !important;
-
+   
     input {
         background-color: var(--body-bg);
         color: var(--font-color) !important;
     }
+
+    p {
+        text-align: justify;
+    }   
+
+    .singature {
+        font-size: 4rem;
+        font-family: 'Signature';
+    }
 }
 
-// .dark-mode {
-//     background-color: #282c34;
-//     color: #FFFFFF;
+@font-face {
+    font-family: Signature;
+    src: url('../fonts/Honofly.otf');
+}
 
-//     input {
-//         background-color: #282c34;
-//     }
-// }
-
-// .light-mode {
-//     background-color: #FFFFFF;
-
-//     input {
-//         background-color: #FFFFFF;
-//     }
-// }
-
-@media (max-width: 780px) {
+@media (max-width: 811px) {
     body{
         font-size: small;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    .singature {
+        font-size: 2.5rem !important;
+        font-family: 'Signature';
     }
 }

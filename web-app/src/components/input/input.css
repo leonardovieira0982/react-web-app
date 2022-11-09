@@ -41,3 +41,29 @@ input:not(:focus):valid ~ .placeholder-label{
   position: relative;
   margin-top: 2rem;
 }
+
+.small-size {
+  width: 10rem;
+}
+
+.medium-size {
+  width: 20rem;
+}
+
+.large-size {
+  width: 30rem;
+} 
+
+@media (max-width: 780px) {
+  .small-size {
+    width: 16.5rem;
+  }
+  
+  .medium-size {
+    width: 16.5rem;
+  }
+  
+  .large-size {
+    width: 16.5rem;
+  } 
+}
