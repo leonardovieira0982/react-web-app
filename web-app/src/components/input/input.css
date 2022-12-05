@@ -1,15 +1,15 @@
 i {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 input {
-    border-top: none;
-    border-left: none;
-    border-right: none;   
+  border-top: none;
+  border-left: none;
+  border-right: none;   
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 input:focus ~ .placeholder-label,
@@ -29,15 +29,42 @@ input:not(:focus):valid ~ .placeholder-label{
 }
 
 .error-empty {
-    border-color: #dc3545;
-    transition: 0.8s ease all;    
+  border-color: #dc3545;
+  transition: 0.8s ease all;    
 }
 
 .error-empty ~ .placeholder-label {
-    color:#dc3545;
+  color:#dc3545;
 }
 
 .div {
   position: relative;
   margin-top: 2rem;
+}
+
+.small-size {
+  width: 10rem;
+}
+
+.medium-size {
+  width: 20rem;
+}
+
+.large-size {
+  width: 30rem;
+}
+
+@media (max-width: 780px) {
+  .small-size {
+    width: 16.5rem;
+  }
+  
+  .medium-size {
+    width: 16.5rem;
+  }
+  
+  .large-size {
+    width: 16.5rem;
+  }
+
 }

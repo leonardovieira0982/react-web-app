@@ -34,7 +34,7 @@ class Navbar extends React.Component {
                         <label className="nav-light-label">Portfolio Example React</label>
                     </div>
                     <div className="nav-div-vw nav-align-padding-left">
-                        <a href="https://github.com/leonardovieira0982" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/leonardovieira0982/react-web-app" target="_blank" rel="noreferrer">
                             <i className="bi bi-github" title="Project in the Github"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/leonardovieira2022/" target="_blank" rel="noreferrer"> 

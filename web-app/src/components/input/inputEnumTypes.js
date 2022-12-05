@@ -1,12 +1,9 @@
-const Types = {
+const InputType = {
     Text: "Text",
     Email: "Email",
     Date: "Date", 
-    Phone: "Phone"
+    Phone: "Phone",
+    Password: "Password"
 }
 
-export default Types; 
-// export interface ITypes {
-//     Label: string;
-//     Type: Types;
-// }
+export default InputType;

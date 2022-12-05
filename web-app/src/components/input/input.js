@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import './input.css';
-class Input extends Component{
+import './input-mask';
+
+class Input extends Component {
     
     constructor(props) {
         super(props);
@@ -13,15 +15,21 @@ class Input extends Component{
         }
     }
 
+    componentDidMount(){       
+       this.onConfigureComponent();
+    }
+
     render(){
         return(
             <div className="div">                
                 <input
-                    id={ this.state.id }                   
+                    id= { this.state.id }
+                    type= { this.props.type }  
+                    width = { this.props.width }             
                     onBlur={ () => this.onBlur(this.state.id, this.state.validate) }
                     required
                 />
-                <span className="placeholder-label">{this.props.placeholder}</span>                
+                <span className="placeholder-label">{ this.props.placeholder }</span>                
             </div>            
         );
     }
@@ -39,8 +47,9 @@ class Input extends Component{
        }        
     }
 
-    onSetMaskType(){
-
+    onConfigureComponent() {
+        let textBox = document.getElementById(this.props.id);
+        textBox.classList.add(this.props.width);
     }
 }
 
