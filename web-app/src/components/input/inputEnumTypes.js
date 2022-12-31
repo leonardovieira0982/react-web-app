@@ -1,9 +1,9 @@
 const InputType = {
-    Text: "Text",
-    Email: "Email",
-    Date: "Date", 
-    Phone: "Phone",
-    Password: "Password"
+  Text: 'Text',
+  Email: 'Email',
+  Date: 'Date',
+  Phone: 'Phone',
+  Password: 'Password'
 }
 
-export default InputType;
+export default InputType
