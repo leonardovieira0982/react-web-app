@@ -5,6 +5,23 @@ import InputType from '../../components/input/inputEnumTypes';
 import Card from '../../components/card/card';
 
 class Home extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: ""
+        };
+    }
+    
+    handleInput = event => {
+        this.setState({ text: event.target.value });
+        alert('handler');
+    };
+
+    onText(control){
+        alert(control);
+    }
+
     render(){       
         return(
             <Fragment>
@@ -17,18 +34,24 @@ class Home extends Component {
                                 <div className="form-table">
                                     <div className="form-row">
                                         <div className="form-column">
-                                            <Input id="txtName" validate={true} type={InputType.Text} placeholder="Name" width="large-size"></Input>
+                                            <Input id="txtName" 
+                                                validate={true} 
+                                                type={InputType.Text} 
+                                                placeholder="Name" 
+                                                width="large-size"
+                                                onChangeText={ () => this.onText(this.props.Name) }> { this.props.Name }
+                                            </Input>
                                         </div>
                                         <div className="form-column">
-                                            <Input id="txtEmail" validate={true} type={InputType.Email} placeholder="Email" width="medium-size"></Input>
+                                            <Input id="txtBirthday" validate={true} type={InputType.Text} placeholder="Birthday" width="small-size"></Input>
                                         </div>
                                     </div>
                                     <div className="form-row">
-                                        <div className="form-column">
-                                            <Input id="txtBirthday" validate={true} type={InputType.Text} placeholder="Birthday" width="medium-size"></Input>
+                                    <div className="form-column">
+                                            <Input id="txtEmail" validate={true} type={InputType.Email} placeholder="Email" width="large-size"></Input>
                                         </div>
                                         <div className="form-column">
-                                            <Input id="txtPhone" validate={false} type={InputType.Phone} placeholder="Mobile" width="medium-size"></Input>
+                                            <Input id="txtPhone" validate={false} type={InputType.Phone} placeholder="Mobile" width="small-size"></Input>
                                         </div>
                                     </div>
                                     <div className="form-row">
@@ -44,7 +67,7 @@ class Home extends Component {
                             <div className="form-column">
                                 <div className="form-table">
                                     <div>
-                                        <Card></Card>
+                                        <Card clientName={ this.state.text }></Card>
                                     </div>
                                 </div> 
                             </div>
