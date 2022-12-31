@@ -24,7 +24,7 @@ class Switchbox extends React.Component {
         <i
           id='switchkbox'
           className='bi bi-toggle-off'
-          onClick={() => this.onToggle}
+          onClick={this.onToggle}
           title='Change the background style'
         />
       </div>

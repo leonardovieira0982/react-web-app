@@ -1,11 +1,11 @@
 i {
-  color: #ffffff;
+  color: #fff;
 }
 
 input {
   border-top: none;
   border-left: none;
-  border-right: none;   
+  border-right: none;
 }
 
 input:focus {
@@ -13,10 +13,9 @@ input:focus {
 }
 
 input:focus ~ .placeholder-label,
-input:not(:focus):valid ~ .placeholder-label{
+input:not(:focus):valid ~ .placeholder-label {
   top: -1rem;
   bottom: 10px;
-  left: 0px;
   font-size: 11px;
   opacity: 1;
 }
@@ -24,17 +23,16 @@ input:not(:focus):valid ~ .placeholder-label{
 .placeholder-label {
   position: absolute;
   pointer-events: none;
-  left: 0px;
   transition: 0.2s ease all;
 }
 
 .error-empty {
   border-color: #dc3545;
-  transition: 0.8s ease all;    
+  transition: 0.8s ease all;
 }
 
 .error-empty ~ .placeholder-label {
-  color:#dc3545;
+  color: #dc3545;
 }
 
 .div {
@@ -58,13 +56,12 @@ input:not(:focus):valid ~ .placeholder-label{
   .small-size {
     width: 16.5rem;
   }
-  
+
   .medium-size {
     width: 16.5rem;
   }
-  
+
   .large-size {
     width: 16.5rem;
   }
-
 }
