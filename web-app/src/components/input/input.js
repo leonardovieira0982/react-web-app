@@ -27,8 +27,8 @@ class Input extends Component {
                     type= { this.props.type }  
                     width = { this.props.width }             
                     onBlur={ () => this.onBlur(this.state.id, this.state.validate) }
-                    required
-                />
+                    onChange= { () => this.props.onChangeText()}
+                    required />
                 <span className="placeholder-label">{ this.props.placeholder }</span>                
             </div>            
         );
@@ -44,7 +44,7 @@ class Input extends Component {
             else {
                 textBox.classList.remove("error-empty");
             }
-       }        
+       }
     }
 
     onConfigureComponent() {
@@ -52,5 +52,4 @@ class Input extends Component {
         textBox.classList.add(this.props.width);
     }
 }
-
 export default Input;

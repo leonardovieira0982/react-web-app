@@ -5,9 +5,8 @@ body {
 section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: blue;
+    align-items: center;    
+    background: #090d36;
 }
 
 
@@ -18,7 +17,7 @@ section {
     /* transform-style: preserve-3d; */
     perspective: 500px;
     z-index: 2; 
-    background-color: blue;
+    background-color: #090d36;
 }
 
 .card .face {
