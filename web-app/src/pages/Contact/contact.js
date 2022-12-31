@@ -1,15 +1,15 @@
-import React, { Fragment } from "react";
-import Card from '../../components/card/card';
+import React, { Fragment } from 'react'
+import Card from '../../components/card/card'
 class Contact extends React.Component {
-    render(){
-        return(
-            <Fragment>
-                <div>
-                <Card></Card>
-                </div>
-            </Fragment>            
-        );
-    }
+  render () {
+    return (
+      <>
+        <div>
+          <Card />
+        </div>
+      </>
+    )
+  }
 }
 
-export default Contact;
+export default Contact
